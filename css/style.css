@@ -235,6 +235,7 @@ nav li a:hover::after{
 
    .mobile-menu.active span:nth-child(1){
        transform: translateY(9px) rotate(45deg);
+       
     }
 
     .mobile-menu.active span:nth-child(2){
