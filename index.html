@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>DIGI's Eatery Hub</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><button class="btn mobile">Login</button></li>
+            </ul>
+            
+        </nav>
+
+        <div class="login">
+            <button class="btn">Login</button>
+        </div>
+
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="./asset/image/eatery_1042x400.webp" alt="">
+
+                    <img id="slide-2" src="./asset/image/image-asset.webp" alt="">
+
+                    <img id="slide-3" src="./asset/image/interior-Pomme-Eatery-restaurant.webp" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+
+                <div class="content">
+                    <h1>Welcome to DIGI's Eatery Hub</h1>
+                    <p>Where Culinary Excellence Meets Digital Innovation And Seamless Dining Experiences..</p>
+                    <button class="btn">Explore Our Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quis rerum eaque maiores iste. Dicta laudantium sed totam ex laborum cumque laboriosam delectus ipsa, reiciendis id, quia incidunt perspiciatis. Ut enim iure fugiat minima earum eveniet, inventore doloribus perferendis, quam vitae eum. Placeat non vero officiis blanditiis natus nihil nesciunt, cum nemo soluta tenetur cupiditate culpa id! Consequuntur dignissimos ipsum id porro earum asperiores expedita totam possimus, deserunt eos explicabo consequatur? Voluptate enim quam impedit maxime ea minus quibusdam magni architecto, quisquam distinctio veritatis praesentium nulla dignissimos qui adipisci assumenda nobis. Corrupti sint illo culpa eveniet quibusdam, error nesciunt omnis repellat eligendi provident quasi quaerat alias facilis quas laboriosam distinctio nihil accusantium! Perferendis sapiente voluptate at nemo, fugiat expedita nulla odit. Laudantium mollitia aliquid facere reprehenderit error similique porro soluta, iste atque quaerat deleniti! Aperiam, maxime alias doloribus doloremque officiis a perspiciatis? Soluta obcaecati, optio laborum ex quis enim pariatur cupiditate deleniti molestias itaque architecto cumque! Inventore, corrupti ipsum nisi, totam culpa assumenda, porro libero nemo beatae optio earum vel. Pariatur eligendi debitis corporis numquam fugit, iste eum minima animi, molestias omnis veniam deserunt! Nulla fuga facilis veniam nemo expedita rerum pariatur? Impedit voluptas sint quis nisi adipisci repudiandae quibusdam cupiditate ipsum veritatis atque cumque, obcaecati itaque similique? Consectetur, nam. Voluptates molestiae officiis, ipsam adipisci asperiores laboriosam qui sit accusamus totam et ex vero deserunt quod laudantium facilis, ea sed odio quibusdam deleniti voluptate corporis. Necessitatibus quae, atque eveniet iure sequi dolores, ipsam nisi ea suscipit tempore fugiat esse dignissimos velit mollitia molestias neque eos aperiam molestiae obcaecati ratione explicabo, quisquam ducimus delectus! Doloremque vero quas quasi nesciunt, ex dignissimos labore dolor. Impedit quia, incidunt sequi quibusdam deleniti odit unde esse optio tempora praesentium delectus explicabo, nobis expedita! Atque, quidem necessitatibus perferendis nihil obcaecati saepe qui praesentium vero ullam vel. Ipsam libero vero veritatis ab voluptatibus molestias maxime, aperiam officiis consequuntur tenetur blanditiis voluptatem nisi sapiente quo quibusdam vitae quam voluptas accusamus assumenda voluptates maiores iusto enim? Incidunt saepe aut magni omnis placeat asperiores fugiat earum, id est et animi ab totam illum blanditiis nostrum atque delectus deserunt esse cum fugit soluta dolore assumenda voluptate. Deserunt amet necessitatibus reprehenderit atque vitae magni voluptatum dolores qui corporis sit culpa officiis error fugiat asperiores ex, similique quos omnis corrupti possimus! Tempore asperiores ipsa ipsam quibusdam earum fugiat perspiciatis recusandae aut sint ullam? Iure veritatis magni reprehenderit incidunt, architecto blanditiis exercitationem quo harum ut ipsa et vel ab pariatur modi dignissimos voluptatibus est maiores, cupiditate placeat molestiae accusamus quod minima! Qui repellendus numquam doloribus cupiditate, ad ipsa harum vitae a est dolor fugiat ipsum nesciunt nostrum impedit reiciendis praesentium odio corrupti eligendi exercitationem sint! Nostrum natus odit repellat delectus corporis dolorum quo fugit alias atque quod necessitatibus accusamus ut, quaerat nobis. Corrupti est similique ipsum deserunt ipsa veniam autem perspiciatis consequatur natus ducimus possimus laboriosam accusantium, amet aut dignissimos? Quae at, quia reiciendis iusto rerum consectetur voluptatum aspernatur odit officiis expedita ratione excepturi rem nemo itaque eligendi aut, atque impedit necessitatibus? Optio, architecto.</p>
+        </section>
+        
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('.slider-nav a');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            // Increment index and loop back to 0 if at the end
+            currentSlide = (currentSlide + 1) % navLinks.length;
+            
+            // Programmatically click the hidden anchor link
+            // This triggers the CSS :target and the smooth scroll behavior
+            navLinks[currentSlide].click();
+        }
+
+        // Run the function every 10000ms (10 seconds)
+        let autoSlide = setInterval(showNextSlide, 10000);
+
+        // Optional: Pause auto-slide if the user manually clicks a dot
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(showNextSlide, 10000); // Restart timer
+            });
+        });
+
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
