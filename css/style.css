@@ -82,7 +82,7 @@ nav li a:hover::after{
 /* HERO SECTION HERE */
 .hero-container{
     background-color: #A04006;
-    height: 100dvh;
+    height: 100svh;
     position: relative;
     z-index: 1;
 }
@@ -110,7 +110,7 @@ nav li a:hover::after{
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%,0%, 0.25);
     scrollbar-width: none;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
 }
 
@@ -199,13 +199,6 @@ nav li a:hover::after{
 
 /* RESPONSIVE */
 @media (max-width:769px) {
-    .hero-container{
-    height: 95vh;
-}
-
-.slider{
-    height: 95vh;
-}
 }
 
 @media(min-width: 1200px){
